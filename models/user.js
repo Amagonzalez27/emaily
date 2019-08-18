@@ -6,3 +6,6 @@ const { Schema } = mongoose;
 const userSchema = new Schema({
   googleId: String,
 });
+// create a model class and a collection needs to be created
+// collection is users
+mongoose.model('users', userSchema);
